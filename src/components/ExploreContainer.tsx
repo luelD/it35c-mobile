@@ -19,11 +19,12 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
       <IonToast 
         trigger="open-toast" 
         position="top" 
-        message="This toast will disappear after a millisecond" 
-        duration={100}>
+        message="Hi! im Luel Dawn T. Cagay" 
+        duration={500}>
       </IonToast>
 
     </div>
+    
   );
 };
 

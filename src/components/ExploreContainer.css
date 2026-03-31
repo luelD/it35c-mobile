@@ -5,20 +5,47 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+
+  padding: 20px;
 }
 
+/* Add card look */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 380px;
+  margin: auto;
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 22px;
+  line-height: 28px;
+  display: block;
+  margin-bottom: 10px;
 }
 
+/* Paragraph */
 #container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6b6b6b;
+  margin-bottom: 20px;
 }
 
+/* Optional link style */
 #container a {
   text-decoration: none;
+  color: #3880ff;
+  font-weight: 500;
+}
+
+/* Optional icon style (if you added one) */
+.icon {
+  font-size: 40px;
+  color: #3880ff;
+  margin-bottom: 10px;
 }
