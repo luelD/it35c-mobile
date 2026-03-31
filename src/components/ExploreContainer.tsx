@@ -1,28 +1,27 @@
 import { IonButton, IonToast } from '@ionic/react';
-import { useState } from 'react';
 import './ExploreContainer.css';
 
-const ExploreContainer: React.FC = () => {
+type ContainerProps = object
 
-  const [showToast, setShowToast] = useState(false);
-
+const ExploreContainer: React.FC<ContainerProps> = () => {
   return (
     <div id="container">
 
-      <h2>Welcome 👋</h2>
-      <p>This is your Ionic Task App</p>
+      <div className="card">
+        <h2>Welcome </h2>
+        <p>This is your Ionic app interface</p>
 
-      <IonButton expand="block" onClick={() => setShowToast(true)}>
-        Show Message
-      </IonButton>
+        <IonButton id="open-toast" expand="block" shape="round">
+          Open
+        </IonButton>
+      </div>
 
-      <IonToast
-        isOpen={showToast}
-        onDidDismiss={() => setShowToast(false)}
-        message="Hello! Your app is working 🚀"
-        duration={1500}
-        position="top"
-      />
+      <IonToast 
+        trigger="open-toast" 
+        position="top" 
+        message="This toast will disappear after a millisecond" 
+        duration={100}>
+      </IonToast>
 
     </div>
   );
