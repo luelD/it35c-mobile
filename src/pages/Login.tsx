@@ -1,6 +1,10 @@
-import {IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, useIonRouter } from '@ionic/react';
 
 const Login: React.FC = () => {
+  const navigation = useIonRouter();
+  const doLogin = () => {
+    navigation.push('/app', 'forward', 'replace');
+  }
 
   return (
   <IonPage>
@@ -12,7 +16,7 @@ const Login: React.FC = () => {
 
       <IonContent className="ion-padding">
 
-       <IonButton expand="full">
+       <IonButton expand="full" onClick={()=> doLogin()}>
        Login
     </IonButton>
 
