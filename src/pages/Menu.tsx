@@ -10,8 +10,8 @@ const Menu: React.FC = () => {
 
   const path = [
     {name:'Home', url:'/app/home',icon:homeOutline},
-    {name:'Home', url:'/app/page1',icon:information},
-    {name:'Home', url:'/app/page2',icon:settingsOutline}
+    {name:'Page1', url:'/app/page1',icon:information},
+    {name:'Page2', url:'/app/page2',icon:settingsOutline}
   ]
 
   return (
