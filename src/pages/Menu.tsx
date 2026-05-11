@@ -12,13 +12,13 @@ const Menu: React.FC = () => {
 
 
   const path = [
-    {name:'Home', url:'/app/home',icon:homeOutline},
+    {name:'Home', url:'/app/home',icon:homeOutline}
     {name:'Page1', url:'/app/page1',icon:information},
     {name:'Page2', url:'/app/page2',icon:settingsOutline}
   ]
 
  
-  const handleLogout = async () => {
+  const handleLogOut = async () => {
     await supabase.auth.signOut();
     navigation.push('/','root','replace')
   }
